@@ -4,5 +4,24 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+input {
+  border: none;
+  border-bottom: 0.1em solid;
+  font-size: large;
 }
