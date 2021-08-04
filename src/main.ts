@@ -8,7 +8,8 @@ const app = document.querySelector<HTMLDivElement>('#app');
 const character: Character[] = [
   {
     name: 'Pickle Rick',
-    thumbnail: 'https://rickandmortyapi.com/api/character/avatar/53.jpeg',
+    thumbnail:
+      'https://static.posters.cz/image/750/poster/rick-and-morty-pickle-rick-i51002.jpg',
     status: 'Alive',
     species: 'Hybrid Human-Pickle',
     origin: 'Erth (C-137',
@@ -16,7 +17,8 @@ const character: Character[] = [
   },
   {
     name: 'Pickle Rick',
-    thumbnail: 'https://rickandmortyapi.com/api/character/avatar/53.jpeg',
+    thumbnail:
+      'https://static.posters.cz/image/750/poster/rick-and-morty-pickle-rick-i51002.jpg',
     status: 'Alive',
     species: 'Hybrid Human-Pickle',
     origin: 'Erth (C-137',
