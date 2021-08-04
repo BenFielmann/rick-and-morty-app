@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #0d0d0e;
+  background: #19191f;
 }
 
 #app {
@@ -15,7 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2a68aa;
+  color: #2aaa35;
 }
 
 h1 {
@@ -23,9 +23,14 @@ h1 {
 }
 
 .searchbar {
+  text-align: center;
+  font-size: large;
   border: none;
   border-bottom: 0.1em solid;
-  font-size: large;
+  padding: 0.5em 0.3em 0.5em 0.1em;
+  max-width: 50%;
+  color: rgb(219, 230, 74);
+  background: rgb(61, 51, 51);
 }
 
 .characterContainer {
