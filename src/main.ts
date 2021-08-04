@@ -12,7 +12,7 @@ const character: Character[] = [
       'https://static.posters.cz/image/750/poster/rick-and-morty-pickle-rick-i51002.jpg',
     status: 'Alive',
     species: 'Hybrid Human-Pickle',
-    origin: 'Erth (C-137',
+    origin: 'Earth (C-137',
     episode: 'Pickle and Rick',
   },
   {
@@ -48,5 +48,3 @@ const mainElement = createElement('main', {
 if (app !== null) {
   app.append(mainElement);
 }
-
-//createCharacterCard(character),//
