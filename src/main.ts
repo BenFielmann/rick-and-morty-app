@@ -1,17 +1,28 @@
 import { createCharacterCard } from './components/character/character';
 import './style.css';
 import { createElement } from './utils/createElement';
+import type { Character } from './types';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
-const character = {
-  name: 'Pickle Rick',
-  thumbnail: 'https://rickandmortyapi.com/api/character/avatar/53.jpeg',
-  status: 'Alive',
-  species: 'Hybrid Human-Pickle',
-  origin: 'Erth (C-137',
-  episode: 'Pickle and Rick',
-};
+const character: Character[] = [
+  {
+    name: 'Pickle Rick',
+    thumbnail: 'https://rickandmortyapi.com/api/character/avatar/53.jpeg',
+    status: 'Alive',
+    species: 'Hybrid Human-Pickle',
+    origin: 'Erth (C-137',
+    episode: 'Pickle and Rick',
+  },
+  {
+    name: 'Pickle Rick',
+    thumbnail: 'https://rickandmortyapi.com/api/character/avatar/53.jpeg',
+    status: 'Alive',
+    species: 'Hybrid Human-Pickle',
+    origin: 'Erth (C-137',
+    episode: 'Pickle and Rick',
+  },
+];
 
 const mainElement = createElement('main', {
   className: 'main__card',
@@ -25,12 +36,9 @@ const mainElement = createElement('main', {
 
     createElement('div', {
       className: 'characterContainer',
-      childElements: [
-        createCharacterCard(character),
-        createCharacterCard(character),
-        createCharacterCard(character),
-        createCharacterCard(character),
-      ],
+      childElements: character.map((character) =>
+        createCharacterCard(character)
+      ),
     }),
   ],
 });
@@ -38,3 +46,5 @@ const mainElement = createElement('main', {
 if (app !== null) {
   app.append(mainElement);
 }
+
+//createCharacterCard(character),//
