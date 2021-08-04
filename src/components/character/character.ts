@@ -1,26 +1,37 @@
-import './character.css';
+import styles from './character.module.css';
 import { createElement } from '../../utils/createElement';
+import type { Character } from '../../types';
 
-export function createCharacterCard(character): HTMLElement {
+export function createCharacterCard({
+  name,
+  thumbnail,
+  status,
+  species,
+  origin,
+  episode,
+}: Character): HTMLElement {
   return createElement('div', {
-    className: 'character-card',
+    className: styles.characterCard,
     childElements: [
       createElement('img', {
-        className: 'character-card__image',
-        src: 'https://rickandmortyapi.com/api/character/avatar/53.jpeg',
+        className: styles.characterCardImage,
+        src: thumbnail,
       }),
       createElement('article', {
-        className: 'character-card__info',
+        className: styles.characterCardInfo,
         childElements: [
-          createElement('h2', { innerText: character.species }),
+          createElement('h2', { innerText: name }),
           createElement('div', {
             childElements: [
-              createElement('h5', { innerText: 'Location' }),
-              createElement('p', { innerText: 'Last known Location:' }),
+              createElement('h4', { innerText: status }),
+              createElement('h5', { innerText: 'last known location' }),
+              createElement('p', { innerText: origin }),
+              createElement('h5', { innerText: 'species' }),
+              createElement('p', { innerText: species }),
+              createElement('h5', { innerText: 'first seen in:' }),
+              createElement('p', { innerText: episode }),
             ],
           }),
-          createElement('h5', { innerText: 'Episode blah' }),
-          createElement('p', { innerText: 'First seen in:' }),
         ],
       }),
     ],

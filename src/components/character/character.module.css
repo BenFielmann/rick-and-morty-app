@@ -1,5 +1,5 @@
-.character-Card {
-  background: #3c3e44;
+.characterCard {
+  background: #949496;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: auto 1fr;
@@ -8,18 +8,18 @@
   height: 13em;
 }
 
-.character-card__image {
+.characterCardImage {
   height: inherit;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
 }
 
-.character-card__info {
+.characterCardInfo {
   text-align: left;
   display: grid;
   padding: 1em;
 }
 
-.character-card__info * {
+.characterCardInfo * {
   margin: 0;
 }

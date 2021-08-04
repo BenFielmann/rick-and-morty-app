@@ -1,10 +1,3 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 *,
 *::after,
 *::before {
@@ -14,14 +7,28 @@
 body {
   margin: 0;
   padding: 0;
+  background: #0d0d0e;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2a68aa;
 }
 
 h1 {
   font-size: xx-large;
 }
 
-input {
+.searchbar {
   border: none;
   border-bottom: 0.1em solid;
   font-size: large;
+}
+
+.characterContainer {
+  display: grid;
+  grid-gap: 2em;
 }
