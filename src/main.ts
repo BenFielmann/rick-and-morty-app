@@ -2,8 +2,16 @@ import { createCharacterCard } from './components/character/character';
 import './style.css';
 import { createElement } from './utils/createElement';
 
+const character = {
+  name: 'Pickle Rick',
+  thumbnail: '',
+  status: 'Alive',
+  species: 'Hybrid Human-Pickle',
+  origin: 'Erth (C-137',
+};
+
 const mainElement = createElement('main', {
-  className: 'maincoon',
+  className: 'main__card',
 
   childElements: [
     createElement('h1', { innerText: 'Rick and Morty' }),
@@ -14,7 +22,12 @@ const mainElement = createElement('main', {
 
     createElement('div', {
       className: 'characterContainer',
-      childElements: [createCharacterCard()],
+      childElements: [
+        createCharacterCard(character),
+        createCharacterCard(character),
+        createCharacterCard(character),
+        createCharacterCard(character),
+      ],
     }),
   ],
 });
