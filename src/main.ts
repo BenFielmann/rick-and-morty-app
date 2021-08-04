@@ -24,21 +24,3 @@ const app = document.querySelector<HTMLDivElement>('#app');
 if (app !== null) {
   app.append(mainElement);
 }
-
-/*
-const mainElement = document.createElement('main');
-
-const title = document.createElement('h1');
-title.innerText = 'Rick and Morty';
-
-const input = document.createElement('input');
-input.placeholder = 'search for a character...';
-
-const para = document.createElement('p');
-para.innerText = 'Character List';
-
-const div = document.createElement('div');
-div.classList.add('container');
-
-mainElement.append(title, input, para);
-*/

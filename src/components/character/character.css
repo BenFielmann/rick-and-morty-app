@@ -1,5 +1,25 @@
-.card {
-  height: 100%;
-  background: #3b4855;
-  color: rgb(202, 166, 166);
+.character-Card {
+  background: #3c3e44;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1em;
+  border-radius: 1em;
+  height: 13em;
+}
+
+.character-card__image {
+  height: inherit;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.character-card__info {
+  text-align: left;
+  display: grid;
+  padding: 1em;
+}
+
+.character-card__info * {
+  margin: 0;
 }
