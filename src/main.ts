@@ -4,7 +4,6 @@ import { createElement } from './utils/createElement';
 import { getCharacters } from './utils/api';
 
 const app = document.querySelector<HTMLDivElement>('#app');
-getCharacters();
 
 const character = await getCharacters();
 
