@@ -6,6 +6,7 @@
   grid-gap: 1em;
   border-radius: 1em;
   height: 13em;
+  max-width: 400px;
 }
 
 .characterCardImage {
