@@ -1,8 +1,42 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #19191f;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #2aaa35;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+.searchbar {
+  text-align: center;
+  font-size: large;
+  border: none;
+  border-bottom: 0.1em solid;
+  padding: 0.5em 0.3em 0.5em 0.1em;
+  max-width: 50%;
+  color: rgb(219, 230, 74);
+  background: rgb(61, 51, 51);
+}
+
+.characterContainer {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  place-items: center;
+  margin-top: 5rem;
 }
