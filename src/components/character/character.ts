@@ -4,18 +4,17 @@ import type { Character } from '../../types';
 
 export function createCharacterCard({
   name,
-  thumbnail,
+  image,
   status,
   species,
   origin,
-  episode,
 }: Character): HTMLElement {
   return createElement('div', {
     className: styles.characterCard,
     childElements: [
       createElement('img', {
         className: styles.characterCardImage,
-        src: thumbnail,
+        src: image,
       }),
       createElement('article', {
         className: styles.characterCardInfo,
@@ -28,8 +27,8 @@ export function createCharacterCard({
               createElement('p', { innerText: origin }),
               createElement('h5', { innerText: 'species' }),
               createElement('p', { innerText: species }),
-              createElement('h5', { innerText: 'first seen in:' }),
-              createElement('p', { innerText: episode }),
+              createElement('h5', { innerText: 'origin:' }),
+              createElement('p', { innerText: origin }),
             ],
           }),
         ],
