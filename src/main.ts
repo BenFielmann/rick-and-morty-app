@@ -1,30 +1,12 @@
 import { createCharacterCard } from './components/character/character';
 import './style.css';
 import { createElement } from './utils/createElement';
-import type { Character } from './types';
+import { getCharacters } from './utils/api';
 
 const app = document.querySelector<HTMLDivElement>('#app');
+getCharacters();
 
-const character: Character[] = [
-  {
-    name: 'Pickle Rick',
-    thumbnail:
-      'https://static.posters.cz/image/750/poster/rick-and-morty-pickle-rick-i51002.jpg',
-    status: 'Alive',
-    species: 'Hybrid Human-Pickle',
-    origin: 'Earth (C-137',
-    episode: 'Pickle and Rick',
-  },
-  {
-    name: 'Pickle Rick',
-    thumbnail:
-      'https://static.posters.cz/image/750/poster/rick-and-morty-pickle-rick-i51002.jpg',
-    status: 'Alive',
-    species: 'Hybrid Human-Pickle',
-    origin: 'Erth (C-137',
-    episode: 'Pickle and Rick',
-  },
-];
+const character = await getCharacters();
 
 const mainElement = createElement('main', {
   className: 'main__card',
