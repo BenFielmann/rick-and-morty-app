@@ -9,8 +9,6 @@ getCharacters();
 const character = await getCharacters();
 
 const mainElement = createElement('main', {
-  className: 'main__card',
-
   childElements: [
     createElement('h1', { innerText: 'Rick and Morty' }),
     createElement('input', {
