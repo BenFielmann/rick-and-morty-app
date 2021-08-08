@@ -22,7 +22,8 @@ export function createCharacterCard({
           createElement('h2', { innerText: name }),
           createElement('div', {
             childElements: [
-              createElement('h4', { innerText: status }),
+              createElement('h4', { innerText: 'Status' }),
+              createElement('p', { innerText: status }),
               createElement('h5', { innerText: 'last known location' }),
               createElement('p', { innerText: origin }),
               createElement('h5', { innerText: 'species' }),
